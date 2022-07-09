@@ -1,0 +1,22 @@
+.body{
+    background-color: #121212;
+}
+.body_upper{
+    display: flex;
+    background: #121212;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+   
+    color: #ffffff;
+}
+.text_area{
+    background: #272727;
+    padding: 10px;
+    color: white;
+}
+.functional_buttons{
+    display: flex;
+    justify-content: space-between;
+}
