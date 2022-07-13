@@ -1,11 +1,11 @@
 import './Navbar.css'
-
+import CodeOffIcon from '@mui/icons-material/CodeOff';
 function Navbar()
 {
     return(
   <nav className="navbar navbar-expand-lg navbar-light ">
   <div className="container-fluid">
-    <a className="navbar-brand text-white" href="#">Caplotex</a>
+    <a className="navbar-brand text-white "  href="#">Caplotex</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -20,8 +20,9 @@ function Navbar()
         
       </ul>
       <form className="d-flex">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-        <button className="btn btn-outline-success text-white " type="submit">Search</button>
+      <a href='https://www.linkedin.com/in/abhishek-kumar-singh-3b62b719b/'>
+        <button className="btn btnn btn-outline-success text-white " type="submit"><CodeOffIcon />  A</button>
+        </a>
       </form>
     </div>
   </div>

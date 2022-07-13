@@ -1,6 +1,10 @@
 import React from 'react'
 import {useState} from 'react'
 import './Body.css'
+import ContentCopyIcon from '@mui/icons-material/ContentCopy';
+import ContentPaste from '@mui/icons-material/ContentPaste';
+import DeleteIcon from '@mui/icons-material/Delete';
+import SimCardDownloadIcon from '@mui/icons-material/SimCardDownload';
 
 function Body()
 { 
@@ -61,15 +65,17 @@ function Body()
    <div className='body_upper'>
   <h1>Paste your text here</h1>
   <form>
-  <textarea className='text_area' rows="10" cols="100" value={text} onChange={handleOnChange} name="comment" form="usrform"></textarea>
+  <div className='txtar'>
+  <textarea className='text_area' rows="15" cols="100" value={text} onChange={handleOnChange} name="comment" form="usrform"></textarea>
+  </div>
   </form>
   <div className='functional_buttons'>
-  <button type = "submit" className="mt-2" onClick={handleOnClickUp}>Uppercase</button>
-  <button type = "submit" className="mt-2 mx-2" onClick={handleOnClickLw}>Lowercase</button>
-  <button type = "submit" className="mt-2 mx-2" onClick={handleOnClickCp}>Copy to clipboard</button>
-  <button type = "submit" className="mt-2 mx-2" onClick={handleOnClickClr}>Clear</button>
-  <button type = "submit" className="mt-2 mx-2" onClick={handleOnClickpst}>Paste</button>
-  <button type = "submit" className="mt-2 mx-2" onClick={handleOnClickdw}>Download .txt file</button>
+  <button type = "submit" className="mt-2 btnn" onClick={handleOnClickUp}>Uppercase</button>
+  <button type = "submit" className="mt-2 mx-2 btnn" onClick={handleOnClickCp}><ContentCopyIcon /></button>
+  <button type = "submit" className="mt-2 mx-2 btnn" onClick={handleOnClickpst}><ContentPaste /></button>
+  <button type = "submit" className="mt-2 mx-2 btnn" onClick={handleOnClickClr}><DeleteIcon /></button>
+  <button type = "submit" className="mt-2 mx-2 btnn" onClick={handleOnClickdw}><SimCardDownloadIcon /></button>
+  <button type = "submit" className="mt-2 mx-2 btnn" onClick={handleOnClickLw}>Lowercase</button>
   {/* <button type = "submit" className="mt-2 mx-2" onClick={handleOnClickres}>Remove Extra Spaces</button> */}
   </div>
   </div>

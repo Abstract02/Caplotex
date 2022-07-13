@@ -1,3 +1,6 @@
 .navbar {
     background-color: #272727;
 }
+.navbar-brand{
+    font-size: 25px;
+}
