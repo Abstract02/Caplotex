@@ -1,5 +1,7 @@
 .body{
     background-color: #121212;
+    height: 100vh;
+    overflow: auto;
 }
 .body_upper{
     display: flex;
@@ -38,4 +40,15 @@ h1{
 .btnn:hover{
     opacity: 50%;
     color: aqua;
+}
+.counter{
+    height: 15vh;
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.counter h3{
+    color: #ffffff;
+    padding: 2px;
 }

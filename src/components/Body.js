@@ -66,7 +66,7 @@ function Body()
   <h1>Paste your text here</h1>
   <form>
   <div className='txtar'>
-  <textarea className='text_area' rows="15" cols="100" value={text} onChange={handleOnChange} name="comment" form="usrform"></textarea>
+  <textarea className='text_area' rows="15" cols="100" value={text} placeholder="Write your text here" onChange={handleOnChange} name="comment" form="usrform"></textarea>
   </div>
   </form>
   <div className='functional_buttons'>
@@ -79,9 +79,10 @@ function Body()
   {/* <button type = "submit" className="mt-2 mx-2" onClick={handleOnClickres}>Remove Extra Spaces</button> */}
   </div>
   </div>
-  <h2 className='mt-3'>Text And Word counter</h2>
-  <p>Character Counter :{text.length}</p>
-  <p>Word Counter :{wrdcount}</p>
+  <div className='counter'>
+  <h3>Character count : {text.length}</h3>
+  <h3>Word Count : {wrdcount}</h3> 
+  </div>
   </div>
     )
 }
