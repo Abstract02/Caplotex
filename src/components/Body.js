@@ -70,12 +70,18 @@ function Body()
   </div>
   </form>
   <div className='functional_buttons'>
-  <button type = "submit" className="mt-2 btnn" onClick={handleOnClickUp}>Uppercase</button>
+    <div className='firstbutton'>
+  <button type = "submit" className="mt-2 btnn btnn1" onClick={handleOnClickUp}>Uppercase</button>
+  </div>
+  <div>
   <button type = "submit" className="mt-2 mx-2 btnn" onClick={handleOnClickCp}><ContentCopyIcon /></button>
   <button type = "submit" className="mt-2 mx-2 btnn" onClick={handleOnClickpst}><ContentPaste /></button>
   <button type = "submit" className="mt-2 mx-2 btnn" onClick={handleOnClickClr}><DeleteIcon /></button>
   <button type = "submit" className="mt-2 mx-2 btnn" onClick={handleOnClickdw}><SimCardDownloadIcon /></button>
-  <button type = "submit" className="mt-2 mx-2 btnn" onClick={handleOnClickLw}>Lowercase</button>
+  </div>
+  <div>
+  <button type = "submit" className="mt-2 mx-2 btnn btnn2 " onClick={handleOnClickLw}>Lowercase</button>
+  </div>
   {/* <button type = "submit" className="mt-2 mx-2" onClick={handleOnClickres}>Remove Extra Spaces</button> */}
   </div>
   </div>
